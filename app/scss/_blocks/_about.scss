@@ -1,0 +1,49 @@
+.about {
+	margin-top: 47px;
+	background-image: url('../img/about-bg.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+
+	&__box {
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		display: flex;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	&__article, &__img-box {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	&__article {
+		padding: 28px 40px 40px;
+	}
+
+	&__img-box {
+
+		img {
+			@include cover;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.about {
+
+		&__box {
+			flex-wrap: wrap;
+		}
+
+		&__article, &__img-box {
+			flex-basis: 100%;
+			max-width: none;
+		}
+
+		&__article {
+			padding: 20px;
+		}
+	}
+}

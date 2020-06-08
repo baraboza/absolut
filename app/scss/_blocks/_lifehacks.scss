@@ -1,0 +1,107 @@
+.lifehacks {
+	background-image: url('../img/lifehacks-bg.jpg');
+	background-size: cover;
+	background-position: center 0;
+
+	&__container {
+		padding-bottom: 120px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -34px;
+			bottom: -152px;
+			width: 516px;
+			height: 410px;
+			background-image: url('../img/lifehacks-image.png');
+		}
+	}
+
+	&__col-title {
+		padding-top: 55px;
+	}
+
+	&__title {
+		margin-left: 65px;
+
+		b {
+			font-size: 36px;
+			font-weight: 900;
+		}
+	}
+
+	&__col-form {
+		margin-top: 110px;
+		flex-grow: 0;
+	}
+
+	.form {
+		padding-top: 30px;
+
+		&__row {
+			margin-top: 9px;
+		}
+
+		&__button {
+			margin-top: 17px;
+		}
+
+		&__checkbox-wrap {
+			margin-top: 25px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.lifehacks {
+
+		&__container {
+			padding-bottom: 80px;
+			
+			&::before {
+				display: none;
+			}
+		}
+
+		&__col-form {
+			margin-top: 70px;
+		}
+
+		.form {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.lifehacks {
+
+		&__col-title {
+			padding-top: 30px;
+		}
+
+		&__title {
+			margin-left: 0;
+			text-align: center;
+
+			b {
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.lifehacks {
+
+		&__container {
+			padding-bottom: 30px;
+		}
+
+		&__col-form {
+			margin-top: 30px;
+		}
+	}
+}

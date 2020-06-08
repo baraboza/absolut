@@ -1,0 +1,193 @@
+.init {
+	background-image: url('../img/init-bg.jpg');
+	background-size: cover;
+	background-position: 50% 0;
+	overflow: hidden;
+
+	&__container {
+		padding-top: 215px;
+		padding-bottom: 40px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 344px;
+			top: 136px;
+			width: 529px;
+			height: 685px;
+			background-image: url('../img/init-man.png');
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 50px;
+
+		span {
+			font-size: 50px;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+	}
+
+	&__subtitle {
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 500;
+
+		svg {
+			vertical-align: top;
+		}
+	}
+
+	&__button {
+		margin-top: 60px;
+		max-width: 330px;
+		font-size: 16px;
+		line-height: 24px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	&__info-list {
+		margin-top: 64px;
+	}
+
+	&__info-item {
+
+		&:first-child {
+			flex: 0 0 360px;
+			max-width: 360px;
+		}
+	}
+
+	&__info-item-box, &__advants-item-box {
+		background-color: rgba(#fff, 0.85);
+		height: 100%;
+		border-radius: 8px;
+		transition: background-color 0.2s;
+
+		&:hover {
+			background-color: rgba(#fff, 1);
+		}
+	}
+
+	&__info-item-box {
+		padding: 30px 19px 25px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__info-text {
+		margin-bottom: auto;
+
+		b {
+			font-weight: 500;
+		}
+	}
+
+	&__info-link-wrap {
+		text-align: center;
+		margin-top: 18px;
+	}
+
+	&__advants-item {
+
+		&:nth-child(n + 2) {
+			margin-top: 26px;
+		}
+	}
+
+	&__advants-item-box {
+		padding: 35px 25px;
+
+		svg {
+			margin-right: 3px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.init {
+
+		&__container {
+			padding-top: 50px;
+		}
+
+		&__advants-list {
+			margin-top: 26px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.init {
+
+		&__container {
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__title {
+			font-size: 25px;
+			line-height: 35px;
+			text-align: center;
+
+			span {
+				font-size: 35px;
+			}
+		}
+
+		&__subtitle {
+			text-align: center;
+		}
+
+		&__button {
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__info-list {
+			margin-top: 40px;
+		}
+
+		&__info-item {
+
+			&:first-child {
+				flex-basis: auto;
+				max-width: none;
+			}
+
+			&:nth-child(n + 2) {
+				margin-top: 15px;
+			}
+		}
+
+		&__info-item-box {
+			padding: 20px;
+		}
+
+		&__advants-list {
+			margin-top: 15px;
+		}
+
+		&__advants-item {
+
+			&:nth-child(n + 2) {
+				margin-top: 15px;
+			}
+		}
+
+		&__advants-item-box {
+			padding: 20px;
+		}
+	}
+}

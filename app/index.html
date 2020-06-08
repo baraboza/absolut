@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__top">
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="Строительная компания Абсолют">
+				</a>
+				<p class="header__title">Ремонт квартир, домов, офисов «под ключ» в Севастополе</p>
+				<p class="header__address-and-time">
+					г. Севастополь, ул. Соловьева, 10, оф. 9 <br>
+					пн-сб 9:00 - 20:00
+				</p>
+				<div class="header__tel-wrap">
+					<a href="tel:+79788261658" rel="nofollow" class="header__tel-icon"><i class="fas fa-phone-alt"></i></a>
+					<div class="header__tel-content">
+						<a href="tel:+79788261658" rel="nofollow" class="header__tel-link">+7 (978) 826-16-58</a>
+						<ul class="header__tel-messengers">
+							<li>Viber</li>
+							<li>Whats App</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<nav class="header__nav">
+				<ul class="menu">
+					<li class="menu-item"><a href="#about" class="js-scroll-link">О нас</a></li>
+					<li class="menu-item"><a href="#services" class="js-scroll-link">Услуги</a></li>
+					<li class="menu-item"><a href="#projects" class="js-scroll-link">Наши работы</a></li>
+					<li class="menu-item"><a href="#tariffs" class="js-scroll-link">Тарифы</a></li>
+					<li class="menu-item"><a href="#videos" class="js-scroll-link">Видеоотзывы</a></li>
+					<li class="menu-item"><a href="#partners" class="js-scroll-link">Партнеры</a></li>
+					<li class="menu-item"><a href="#team" class="js-scroll-link">Команда</a></li>
+					<li class="menu-item"><a href="#faq" class="js-scroll-link">Вопрос-ответ</a></li>
+					<li class="menu-item"><a href="#footer" class="js-scroll-link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="init">
+			<div class="init__container container">
+				<div class="init__row row justify-content-between align-items-end">
+					<div class="init__col-left col-lg-8 col-xl-7">
+						<p class="init__title"><span>Ремонт квартир</span><br> комплексно и надёжно</p>
+						<p class="init__subtitle">
+							за 1-1,5 месяца от 3000 руб/кв.м с гарантией<br>
+							<svg class="svg-red svg-shield">
+								<use xlink:href="#svg-shield"></use>
+							</svg>
+							<b>3 года</b> по договору на все виды работ
+						</p>
+						<a href="#modal" class="init__button button js-modal-open">Рассчитать стоимость ремонта<br> БЕСПЛАТНО</a>
+						<ul class="init__info-list row">
+							<li class="init__info-item col-md">
+								<div class="init__info-item-box">
+									<p class="init__info-text txt-small"><b>Команда разноплановых специалистов с 20-летним опытом:</b> прорабы, электри-ки, плиточники, маляры, сантехники</p>
+									<p class="init__info-link-wrap"><a href="#team" class="link js-scroll-link">Смотреть команду</a></p>
+								</div>
+							</li>
+							<li class="init__info-item col-md">
+								<div class="init__info-item-box">
+									<p class="init__info-text txt-small"><b>При заказе ремонта «под ключ» щедрые и полезные подарки на выбор</b></p>
+									<p class="init__info-link-wrap"><a href="#request" class="link js-scroll-link">Смотреть подарки</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="init__col-right col-lg-3">
+						<ul class="init__advants-list row">
+							<li class="init__advants-item col-12">
+								<div class="init__advants-item-box">
+									<p class="txt-small">
+										<svg class="svg-red svg-push-pin">
+											<use xlink:href="#svg-push-pin"></use>
+										</svg>
+										Фиксируем озвученную стоимость в смете - не повышаем во время ремонта
+									</p>
+								</div>
+							</li>
+							<li class="init__advants-item col-12">
+								<div class="init__advants-item-box">
+									<p class="txt-small">
+										<svg class="svg-red svg-like">
+											<use xlink:href="#svg-like"></use>
+										</svg>
+										Работы производятся в соответствии с тех регламентом под контролем технического директора
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="services">
+			<div class="services__container container">
+				<p class="services__title h2">Широкий спектр услуг по ремонту и дизайну интерьера комплексно и по-отдельности</p>
+				<p class="services__subtitle">для квартиры, дома, коттеджа, офиса, магазина, отеля</p>
+				<ul class="services__grid">
+					<li class="services__grid-item">
+						<div class="services__item-box services__item-box--design-project">
+							<img src="img/services-item-1.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-text txt">Дизайн-проект интерьера бесплатно при заказе РЕМОНТА «ПОД КЛЮЧ»</p>
+								<a href="#modal" class="services__link link js-modal-open">Хочу дизайн-проект</a>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box services__item-box--repair-work">
+							<img src="img/services-item-2.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-text txt">Ремонтные работы любой сложности для новостроек, вторичного жилья, домов, офисов</p>
+								<a href="#request" class="services__link link js-scroll-link">Заказать смету</a>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box services__item-box--plumbing-work">
+							<img src="img/services-item-3.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-title">Сантехнические<br> работы</p>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box">
+							<img src="img/services-item-4.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-title">Услуги<br> электрика</p>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box">
+							<img src="img/services-item-5.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-title">КУХНИ<br> ПОД ЗАКАЗ</p>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box services__item-box--stretch-ceiling">
+							<img src="img/services-item-6.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-title">НАТЯЖНЫЕ<br> ПОТОЛКИ</p>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box">
+							<img src="img/services-item-7.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-title">ПРОИЗВОДСТВО<br> И УСТАНОВКА<br> ОКОН</p>
+							</div>
+						</div>
+					</li>
+					<li class="services__grid-item">
+						<div class="services__item-box">
+							<img src="img/services-item-8.jpg" alt="">
+							<div class="services__item-content">
+								<p class="services__item-title">ПРОДАЖА И УСТАНОВКА<br> КОНДИЦИОНЕРОВ</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="request" class="request">
+			<div class="request__container container">
+				<div class="request__row row">
+					<div class="request__col-content col-lg">
+						<div class="request__content">
+							<p class="request__title h2">
+								Получите <span><b>качественный <br>
+								и надежный ремонт «под ключ»</b></span>
+								с подарками на выбор
+							</p>
+							<ul class="request__gift-list row justify-content-center">
+								<li class="request__gift-item col-6 col-sm-4">
+									<div class="request__gift-item-box request__gift-item-box--design">
+										<img src="img/request-gift-1.png" alt="">
+										<p class="request__gift-title">Дизайн-проект</p>
+									</div>
+								</li>
+								<li class="request__gift-item col-6 col-sm-4">
+									<div class="request__gift-item-box request__gift-item-box--ceiling">
+										<img src="img/request-gift-2.png" alt="">
+										<p class="request__gift-title">Натяжной потолок</p>
+									</div>
+								</li>
+								<li class="request__gift-item col-6 col-sm-4">
+									<div class="request__gift-item-box request__gift-item-box--hisense">
+										<img src="img/request-gift-3.png" alt="">
+										<p class="request__gift-title">Кондиционер Hisense</p>
+									</div>
+								</li>
+								<li class="request__gift-item col-6 col-sm-4">
+									<div class="request__gift-item-box request__gift-item-box--rehau">
+										<img src="img/request-gift-4.png" alt="">
+										<p class="request__gift-title">Окна Rehau</p>
+									</div>
+								</li>
+								<li class="request__gift-item col-6 col-sm-4">
+									<div class="request__gift-item-box request__gift-item-box--bosch">
+										<img src="img/request-gift-5.png" alt="">
+										<p class="request__gift-title">Посудомоечная машина Bosch</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="request__col-form col-lg">
+						<form class="form">
+							<div class="form__content">
+								<p class="form__title">Оставьте заявку </p>
+								<p class="form__subtitle txt">
+									на расчет стоимости ремонта<br>
+									и <b>получите подарок</b> на выбор<br>
+									<span>Мы перезвоним в течение часа</span>
+								</p>
+								<div class="form__row">
+									<input type="text" class="input" placeholder="Ваше имя">
+								</div>
+								<div class="form__row">
+									<input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+								</div>
+								<input type="submit" class="form__button button" value="Рассчитать стоимость ремонта">
+								<div class="form__checkbox-wrap">
+									<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<div class="projects__container container">
+				<p class="projects__title h2">
+					<span>За 20 лет</span> работы обосрались всего 2 раза и произвели <br>
+					<span>432 ремонта</span> помещений для комфортной жизни и работы людей
+				</p>
+				<div class="projects__slider slider">
+					<ul class="slider__list">
+						<li class="slider__item">
+							<div class="projects__item-box">
+								<div class="projects__img-box">
+									<img src="img/project-image.jpg" alt="">
+								</div>
+								<div class="projects__item-content">
+									<div class="projects__article article">
+										<ul>
+											<li><b>Цель: Выполнить ремонт квартиры по утвержденному дизайн проекту</b></li>
+											<li><b>Перечень работ:</b> Устройство декоративных коробов по периметру помещения со световым карнизом, декоративная штукатурка, укладка паркета.</li>
+											<li><b>Срок выполнения:</b><span class="projects__article-dots">...............................................</span>74 дня</li>
+											<li><b>Площадь объекта:</b><span class="projects__article-dots">...............................................</span>85 кв/м</li>
+											<li><b>Стоимость работ:</b><span class="projects__article-dots">................................................</span>752 000 руб.</li>
+											<li><b>Прораб объекта:</b><span class="projects__article-dots">..................................................</span>Ерцин Александр</li>
+											<li><b>Опыт работы:</b><span class="projects__article-dots">........................................................</span>более 9 лет</li>
+										</ul>
+									</div>
+									<a href="#modal" class="projects__button button button--yellow js-modal-open">Хочу так же</a>
+								</div>
+							</div>
+						</li>
+						<li class="slider__item">
+							<div class="projects__item-box">
+								<div class="projects__img-box">
+									<img src="img/project-image.jpg" alt="">
+								</div>
+								<div class="projects__item-content">
+									<div class="projects__article article">
+										<ul>
+											<li><b>Цель: Выполнить ремонт квартиры по утвержденному дизайн проекту</b></li>
+											<li><b>Перечень работ:</b> Устройство декоративных коробов по периметру помещения со световым карнизом, декоративная штукатурка, укладка паркета.</li>
+											<li><b>Срок выполнения:</b><span class="projects__article-dots">...............................................</span>74 дня</li>
+											<li><b>Площадь объекта:</b><span class="projects__article-dots">...............................................</span>85 кв/м</li>
+											<li><b>Стоимость работ:</b><span class="projects__article-dots">................................................</span>752 000 руб.</li>
+											<li><b>Прораб объекта:</b><span class="projects__article-dots">..................................................</span>Ерцин Александр</li>
+											<li><b>Опыт работы:</b><span class="projects__article-dots">........................................................</span>более 9 лет</li>
+										</ul>
+									</div>
+									<a href="#modal" class="projects__button button button--yellow js-modal-open">Хочу так же</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<button class="slider__prev"><i class="fas fa-chevron-left"></i></button>
+					<button class="slider__next"><i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		</section>
+
+		<section id="tariffs" class="tariffs">
+			<div class="tariffs__container container">
+				<p class="tariffs__title h2"><span>Ориентировочная стоимость</span> на ремонт помещений для того,<br> чтобы Вы примерно понимали объем работ и цену за ремонт</p>
+				<div class="tariffs__slider slider">
+					<ul class="slider__list">
+						<li class="slider__item">
+							<div class="tariffs__item-box tariffs__item-box--standard">
+								<div class="tariffs__img-box">
+									<img src="img/tariffs-item-1.jpg" alt="">
+									<p class="tariffs__item-title">ремонт квартиры<br> <b>«Стандарт»</b></p>
+								</div>
+								<div class="tariffs__item-text">
+									<p class="tariffs__desc">Бюджетный вариант качественного ремонта без излишеств</p>
+									<div class="tariffs__article article">
+										<ul>
+											<li>Частичное выравнивание стен под обои и плитку</li>
+											<li>Оклейка стен обоями</li>
+											<li>Укладка керамической плитки</li>
+											<li>Установка сантехники</li>
+											<li>Установка электрофурнитуры</li>
+											<li>Натяжные потолки</li>
+											<li>Укдадка линолеума, ковролина</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tariffs__item-footer">
+									<p class="tariffs__price">от <b>3000-6000 Р</b> кв/м</p>
+									<a href="#modal" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
+								</div>
+							</div>
+						</li>
+						<li class="slider__item">
+							<div class="tariffs__item-box tariffs__item-box--capital">
+								<div class="tariffs__img-box">
+									<img src="img/tariffs-item-2.jpg" alt="">
+									<p class="tariffs__item-title">ремонт квартиры<br> <b>«Капитальный»</b></p>
+								</div>
+								<div class="tariffs__item-text">
+									<p class="tariffs__desc">Качественная отделка с пименеием широкого спектра отделочных материалов</p>
+									<div class="tariffs__article article">
+										<ul>
+											<li>Устройство выравнивающей стяжки по полам</li>
+											<li>Полная замена электрики</li>
+											<li>Сантехнические работы «под ключ»</li>
+											<li>Декоративные элементы из ГКЛ</li>
+											<li>Выравнивание стен под обои, плитку по маякам</li>
+											<li>Комбинированные потолки ГКЛ+натяжной</li>
+											<li>Оклейка стен обоями (в т.ч. под покраску)</li>
+											<li>Укладка керамической плитки</li>
+											<li>Монтаж теплых полов</li>
+											<li>Укладка ламината/линолеума/ковролина</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tariffs__item-footer">
+									<p class="tariffs__price">от <b>6000-9000 Р</b> кв/м</p>
+									<a href="#modal" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
+								</div>
+							</div>
+						</li>
+						<li class="slider__item">
+							<div class="tariffs__item-box tariffs__item-box--elite">
+								<div class="tariffs__img-box">
+									<img src="img/tariffs-item-3.jpg" alt="">
+									<p class="tariffs__item-title">ремонт по дизайн-проекту<br> <b>«Элитный»</b></p>
+								</div>
+								<div class="tariffs__item-text">
+									<p class="tariffs__desc">Высокачественный ремонт, дает максимальные возможности по перепланировке и эксклюзивному оформлению</p>
+									<div class="tariffs__article article">
+										<ul>
+											<li>Демонтаж существующей отделки стен, перегородок</li>
+											<li>Возведение стен и перегородок</li>
+											<li>Утепление и звукоизоляция стен</li>
+											<li>Устройство выравнивающей стяжки по полам</li>
+											<li>Полная замена электрики</li>
+											<li>Сантехнические работы «под ключ»</li>
+											<li>Декоративные элементы из ГКЛ</li>
+											<li>Выравнивание стен под обои, плитку по маякам</li>
+											<li>Комбинированные потолки ГКЛ+натяжной сложной геометрической формы с подсветкой</li>
+											<li>Оклейка стен обоями (в т.ч. под покраску), декоративная штукатурка</li>
+											<li>Укладка керамической плитки, мозаики</li>
+											<li>Монтаж теплых полов</li>
+											<li>Укладка паркетной доски, ламината</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tariffs__item-footer">
+									<p class="tariffs__price">от <b>9000 Р</b> кв/м</p>
+									<a href="#modal" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<button class="slider__prev"><i class="fas fa-chevron-left"></i></button>
+					<button class="slider__next"><i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		</section>
+
+		<section id="videos" class="videos">
+			<div class="videos__container container">
+				<p class="videos__title h2"><span>99% наших клиентов</span> возвращаются<br> снова и советуют нас</p>
+				<div class="videos__slider slider">
+					<ul class="slider__list">
+						<li class="slider__item">
+							<a href="http://www.youtube.com/watch?v=opj24KnzrWo" class="videos__item-box fancybox-media">
+								<img src="img/videos-item-1.jpg" alt="">
+								<span class="videos__play-icon"></span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="http://www.youtube.com/watch?v=opj24KnzrWo" class="videos__item-box fancybox-media">
+								<img src="img/videos-item-2.jpg" alt="">
+								<span class="videos__play-icon"></span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="http://www.youtube.com/watch?v=opj24KnzrWo" class="videos__item-box fancybox-media">
+								<img src="img/videos-item-2.jpg" alt="">
+								<span class="videos__play-icon"></span>
+							</a>
+						</li>
+					</ul>
+					<button class="slider__prev"><i class="fas fa-chevron-left"></i></button>
+					<button class="slider__next"><i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="lifehacks">
+			<div class="lifehacks__container container">
+				<div class="lifehacks__row row justify-content-between">
+					<div class="lifehacks__col-title col-lg-7">
+						<p class="lifehacks__title h2"><span><b>ТОП 10 лайфхаков</b></span> как принять квартиру от застройщика, чтобы потом не переплачивать за ремонт</p>
+					</div>
+					<div class="lifehacks__col-form col-lg">
+						<form class="form">
+							<div class="form__content">
+								<p class="form__title">Заполните форму </p>
+								<p class="form__subtitle txt">
+									и получите лайфхаки на почту <br>
+									через 5 секунд
+								</p>
+								<div class="form__row">
+									<input type="text" class="input" placeholder="Ваше имя">
+								</div>
+								<div class="form__row">
+									<input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+								</div>
+								<div class="form__row">
+									<input type="email" class="input" placeholder="Email">
+								</div>
+								<input type="submit" class="form__button button" value="Рассчитать стоимость ремонта">
+								<div class="form__checkbox-wrap">
+									<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="steps">
+			<div class="steps__container container">
+				<p class="steps__title h2">Как происходит весь процесс<br> <span>взаимодействия</span> с нами:</p>
+				<ol class="steps__list row justify-content-center">
+					<li class="steps__item col-md-6 col-lg-4">
+						<p class="steps__text txt">Оставьте заявку на сайте<br> или позвоните по телефону<br> <b>+7 (978) 826-16-58</b></p>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<p class="steps__text txt">Евгений свяжется с Вами для обсуждения деталей, приедет на замеры и составит смету</p>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<p class="steps__text txt">Согласование <br> окончательной сметы<br> и дизайн-проекта</p>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<p class="steps__text txt">Подписание Договора, внесение предоплаты от 5% <br> на р/счет или наличными </p>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<p class="steps__text txt">Ремонт, закупка материалов<br> и прием работ по этапам в<br> течение 1-1,5 месяцев</p>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<section id="faq" class="faq">
+						<p class="faq__title h2"><span><b>ТОП 10 вопросов</b></span><br> и ответов о ремонте</p>
+						<ul class="faq__list">
+							<li class="faq__item">
+								<p class="faq__question txt">Какие виды ремонта можно произвести в жилой комнате, частном доме или офисном помещении?</p>
+								<div class="faq__answer article">
+									<p>Бытовой ремонт. Такие мелкие ремонтные работы практически каждый день бывают необходимы в любом помещении, где бывают люди. Они не носят глобального масштаба, но раздражают и вообще, мешают жить. Прикрутить дверцу шкафа, повесить полку или зеркало можно самостоятельно, или позвав на помощь знакомых и друзей. Как вариант – пригласить специалистов из небольших фирм, предлагающих подобные услуги. Если же дело касается коммуникаций – электрических розеток или водопроводных кранов – лучше обратиться к помощи специалистов из соответствующих служб.</p>
+								</div>
+							</li>
+							<li class="faq__item">
+								<p class="faq__question txt">Почему сотрудничать с крупной специализированной организацией надежнее и выгоднее?</p>
+								<div class="faq__answer article">
+									<p>Бытовой ремонт. Такие мелкие ремонтные работы практически каждый день бывают необходимы в любом помещении, где бывают люди. Они не носят глобального масштаба, но раздражают и вообще, мешают жить. Прикрутить дверцу шкафа, повесить полку или зеркало можно самостоятельно, или позвав на помощь знакомых и друзей. Как вариант – пригласить специалистов из небольших фирм, предлагающих подобные услуги. Если же дело касается коммуникаций – электрических розеток или водопроводных кранов – лучше обратиться к помощи специалистов из соответствующих служб.</p>
+								</div>
+							</li>
+							<li class="faq__item">
+								<p class="faq__question txt">Процесс согласования перепланировок жилых и офисных помещений</p>
+								<div class="faq__answer article">
+									<p>Бытовой ремонт. Такие мелкие ремонтные работы практически каждый день бывают необходимы в любом помещении, где бывают люди. Они не носят глобального масштаба, но раздражают и вообще, мешают жить. Прикрутить дверцу шкафа, повесить полку или зеркало можно самостоятельно, или позвав на помощь знакомых и друзей. Как вариант – пригласить специалистов из небольших фирм, предлагающих подобные услуги. Если же дело касается коммуникаций – электрических розеток или водопроводных кранов – лучше обратиться к помощи специалистов из соответствующих служб.</p>
+								</div>
+							</li>
+							<li class="faq__item">
+								<p class="faq__question txt">Чем завершается каждый правильный ремонт?</p>
+								<div class="faq__answer article">
+									<p>Бытовой ремонт. Такие мелкие ремонтные работы практически каждый день бывают необходимы в любом помещении, где бывают люди. Они не носят глобального масштаба, но раздражают и вообще, мешают жить. Прикрутить дверцу шкафа, повесить полку или зеркало можно самостоятельно, или позвав на помощь знакомых и друзей. Как вариант – пригласить специалистов из небольших фирм, предлагающих подобные услуги. Если же дело касается коммуникаций – электрических розеток или водопроводных кранов – лучше обратиться к помощи специалистов из соответствующих служб.</p>
+								</div>
+							</li>
+							<li class="faq__item">
+								<p class="faq__question txt">Как получить гарантии качества на свой ремонт?</p>
+								<div class="faq__answer article">
+									<p>Бытовой ремонт. Такие мелкие ремонтные работы практически каждый день бывают необходимы в любом помещении, где бывают люди. Они не носят глобального масштаба, но раздражают и вообще, мешают жить. Прикрутить дверцу шкафа, повесить полку или зеркало можно самостоятельно, или позвав на помощь знакомых и друзей. Как вариант – пригласить специалистов из небольших фирм, предлагающих подобные услуги. Если же дело касается коммуникаций – электрических розеток или водопроводных кранов – лучше обратиться к помощи специалистов из соответствующих служб.</p>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="col-lg-5">
+					<section id="partners" class="partners">
+						<p class="partners__title h2">Наши Партнеры</p>
+						<ul class="partners__list row">
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-1.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-2.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-1.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-2.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-1.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-2.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-1.png" alt="">
+								</a>
+							</li>
+							<li class="partners__item col-6">
+								<a href="#" target="_blank" rel="nofollow" class="partners__item-box">
+									<img src="img/partners-item-2.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<section id="about" class="about">
+			<div class="about__container container">
+				<div class="about__box">
+					<div class="about__article article">
+						<h2>О компании «Абсолют»</h2>
+						<p>Разнообразный и богатый опыт говорит нам, что начало повседневной работы по формированию позиции требует определения и уточнения системы массового участия. Для современного мира граница обучения кадров однозначно фиксирует необходимость экспериментов, поражающих по своей масштабности и грандиозности. </p>
+						<p>Лишь тщательные исследования конкурентов формируют глобальную экономическую сеть и при этом - указаны как претенденты на роль ключевых факторов. Разнообразный и богатый опыт говорит нам, что консультация с широким активом требует от нас анализа инновационных методов управления процессами! </p>
+						<p>Постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки существующих финансовых и административных условий.</p>
+					</div>
+					<div class="about__img-box">
+						<img src="img/about.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="team" class="team">
+			<div class="team__container container">
+				<p class="team__title h2"><span>Команда «Абсолют» —</span> надежные<br> профессионалы своего дела</p>
+				<div class="team__row row">
+					<div class="team__col-leaders col-lg-6">
+						<p class="team__leaders-title txt">Идейные вдохновители и руководители «Абсолют»</p>
+						<ul class="team__leaders-list row">
+							<li class="team__leaders-item col-6">
+								<img src="img/team-leader.jpg" alt="" class="team__leaders-image">
+								<p class="team__leaders-text txt-small"><b>Евгений,</b><br> соучредитель, руководитель отдела продаж</p>
+							</li>
+							<li class="team__leaders-item col-6">
+								<img src="img/team-leader.jpg" alt="" class="team__leaders-image">
+								<p class="team__leaders-text txt-small"><b>Евгений,</b><br> соучредитель, руководитель отдела продаж</p>
+							</li>
+						</ul>
+					</div>
+					<div class="team__col-fullteam col-lg-6">
+						<p class="team__fullteam-title txt">Над Вашим ремонтом будут работать поэтапно 20 человек - специалистов в разных областях</p>
+						<img src="img/team-fullteam.jpg" alt="" class="team__fullteam-image">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer" class="footer">
+		<div class="footer__main">
+			<div class="container">
+				<div class="row">
+					<div class="footer__col col-sm-4 col-lg-3">
+						<a href="#" class="footer__logo">
+							<img src="img/logo-white.svg" alt="">
+						</a>
+						<p class="footer__title">Ремонт квартир, домов, офисов<br> «под ключ» в Севастополе</p>
+					</div>
+					<div class="footer__col col-sm-4 col-lg-2">
+						<ul class="menu">
+							<li class="menu-item"><a href="#about" class="js-scroll-link">О нас</a></li>
+							<li class="menu-item"><a href="#services" class="js-scroll-link">Услуги</a></li>
+							<li class="menu-item"><a href="#projects" class="js-scroll-link">Наши работы</a></li>
+							<li class="menu-item"><a href="#tariffs" class="js-scroll-link">Тарифы</a></li>
+						</ul>
+					</div>
+					<div class="footer__col col-sm-4 col-lg-2">
+						<ul class="menu">
+							<li class="menu-item"><a href="#videos" class="js-scroll-link">Видеоотзывы</a></li>
+							<li class="menu-item"><a href="#partners" class="js-scroll-link">Партнеры</a></li>
+							<li class="menu-item"><a href="#team" class="js-scroll-link">Команда</a></li>
+							<li class="menu-item"><a href="#faq" class="js-scroll-link">Вопрос-ответ</a></li>
+							<li class="menu-item"><a href="#footer" class="js-scroll-link">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__col col-sm-6 col-lg-2">
+						<p class="footer__address txt-small">г. Севастополь,<br> ул. Соловьева, 10, оф. 9 <br> пн-сб 9:00 - 20:00</p>
+						<p class="footer__pay txt-small">Способы оплаты: <br> р/счет и наличные</p>
+					</div>
+					<div class="footer__col col-sm">
+						<div class="footer__contacts">
+							<p class="footer__tel">
+								<a href="tel:+79788261658" rel="nofollow">+7 (978) 826-16-58</a>
+								<span>
+									<i class="fab fa-whatsapp"></i>
+									<i class="fab fa-viber"></i>
+								</span>
+							</p>
+							<p class="footer__email txt-small"><a href="mailto:absolut@mail.com" rel="nofollow">absolut@mail.com</a></p>
+							<ul class="footer__social-list">
+								<li class="footer__social-item">
+									<a href="#" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a>
+								</li>
+								<li class="footer__social-item">
+									<a href="#" target="_blank" rel="nofollow"><i class="fab fa-vk"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__policy"><a href="#" target="_blank">Политика конфиденциальности</a></p>
+				<p class="footer__copyright">г. Симферополь © Copyright  2020 г.</p>
+				<p class="footer__madein">Сделано в <a href="#" target="_blank"><img src="img/sheer.svg" height="22" alt="Sheer"></a></p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="scroll-top"><span><i class="fas fa-arrow-up"></i></span></div>
+
+	<div id="modal" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<form class="modal form">
+				<div class="modal__close"><i class="fas fa-times"></i></div>
+				<div class="form__content">
+					<p class="form__title">Оставьте заявку</p>
+					<p class="form__subtitle txt">
+						и наш менеджер<br> свяжется с вами
+					</p>
+					<div class="form__row">
+						<input type="text" class="input" placeholder="Ваше имя">
+					</div>
+					<div class="form__row">
+						<input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+					</div>
+					<input type="submit" class="form__button button" value="Отправить">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol id="svg-like" viewBox="0 0 512 512">
+				<path d="M37.3,490.7h53.3c20.6,0,37.3-16.7,37.3-37.3V208c0-20.6-16.7-37.3-37.3-37.3H37.3C16.7,170.7,0,187.4,0,208
+				v245.3C0,473.9,16.7,490.7,37.3,490.7z"/>
+				<path d="M272.7,16c-21.3,0-32,10.7-32,64c0,50.7-49.1,91.5-80.7,112.5v264.3c34.2,15.8,102.5,39.2,208.7,39.2h34.1
+				c41.6,0,77-29.9,84.1-70.8l23.9-138.7c9-52.3-31.1-99.8-84.1-99.8H326c0,0,16-32,16-85.3C342,37.3,294,16,272.7,16L272.7,16z"/>
+			</symbol>
+
+			<symbol id="svg-push-pin" viewBox="0 0 512 512">
+				<path d="M188.9,183.8c-35.1-35.1-92.1-35.1-127.3,0l266.6,266.6c35.1-35.1,35.1-92.1,0-127.3L188.9,183.8z"/>
+				<path d="M319.7,95.5l-105.5,71.3l131.1,131.1l71.3-105.5L319.7,95.5z"/>
+				<path d="M351.5,0c-23.4,23.4-23.4,61.4,0,84.9l75.7,75.7c23.4,23.4,61.4,23.4,84.9,0L351.5,0z"/>
+				<path d="M0,490.7l163-163l21.2,21.2l-163,163L0,490.7z"/>
+			</symbol>
+
+			<symbol id="svg-shield" viewBox="0 0 512 512">
+				<path d="M256,158.5c-53.8,0-97.6,43.8-97.6,97.6c0,53.8,43.8,97.6,97.6,97.6c53.8,0,97.6-43.8,97.6-97.6
+				C353.5,202.2,309.8,158.5,256,158.5z M313.9,237.6L244,307.5c-2.9,2.9-6.8,4.4-10.6,4.4s-7.7-1.5-10.6-4.4l-26.7-26.7
+				c-5.9-5.9-5.9-15.4,0-21.2c5.9-5.9,15.4-5.9,21.2,0l16.1,16.1l59.3-59.3c5.9-5.9,15.4-5.9,21.2,0
+				C319.8,222.3,319.8,231.8,313.9,237.6z"/>
+				<path d="M473.5,138.9l0-0.4c-0.2-4.9-0.4-10.1-0.5-15.9c-0.4-28.2-22.9-51.6-51.1-53.2C363.1,66.2,317.5,47,278.6,9
+				l-0.3-0.3c-12.7-11.6-31.8-11.6-44.5,0L233.4,9C194.5,47,149,66.2,90.1,69.5C61.9,71,39.4,94.4,39,122.6c-0.1,5.8-0.2,11-0.5,15.9
+				l0,0.9c-1.1,60-2.6,134.7,22.4,202.5c13.7,37.3,34.6,69.7,61.9,96.3c31.1,30.3,71.8,54.4,121,71.6c1.6,0.6,3.3,1,5,1.4
+				c2.4,0.5,4.8,0.7,7.2,0.7c2.4,0,4.8-0.2,7.2-0.7c1.7-0.3,3.4-0.8,5-1.4c49.2-17.2,89.9-41.3,120.9-71.6
+				c27.3-26.7,48.1-59.1,61.9-96.4C476,273.9,474.6,199.1,473.5,138.9z M256,383.6c-70.4,0-127.6-57.2-127.6-127.6
+				S185.6,128.4,256,128.4c70.4,0,127.6,57.2,127.6,127.6S326.4,383.6,256,383.6z"/>
+			</symbol>
+
+			<symbol id="svg-gift" viewBox="0 0 53.7 53.7">
+				<path d="M10.9,53.7h31.8c2.2,0,4-1.8,4-4v-20H6.9v20C6.9,51.9,8.7,53.7,10.9,53.7z"/>
+				<path d="M4.5,22.3v5.4h44.8v-5.4c0-2.2-1.8-4-4-4H33.5c5.6,0,13.6-5.4,11.8-11.1C43.9,2.4,39.5,0,35,0
+				c-6.3,0-8,13.3-8,13.3h-0.2c0,0-1.6-13.3-8-13.3C14.4,0,10,2.4,8.5,7.2c-1.8,5.7,6.2,11.1,11.8,11.1H8.5
+				C6.3,18.3,4.5,20.1,4.5,22.3z M39.7,4.8c0,0-0.2,6.5-9,11.4C30.7,16.2,32.3,7.9,39.7,4.8z M14.3,4.8c7.3,3,9,11.4,9,11.4
+				C14.5,11.4,14.3,4.8,14.3,4.8z"/>
+			</symbol>
+		</svg>
+	</div>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

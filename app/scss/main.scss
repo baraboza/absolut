@@ -1,0 +1,32 @@
+@import "vars";
+@import "libs";
+@import "mixins";
+@import "fonts";
+@import "common";
+@import "text";
+@import "svg";
+
+@import "_blocks/button";
+@import "_blocks/link";
+@import "_blocks/input";
+@import "_blocks/form";
+@import "_blocks/slider";
+@import "_blocks/article";
+
+@import "_blocks/scroll-top";
+@import "_blocks/header";
+@import "_blocks/init";
+@import "_blocks/services";
+@import "_blocks/request";
+@import "_blocks/projects";
+@import "_blocks/tariffs";
+@import "_blocks/videos";
+@import "_blocks/lifehacks";
+@import "_blocks/steps";
+@import "_blocks/faq";
+@import "_blocks/partners";
+@import "_blocks/about";
+@import "_blocks/team";
+@import "_blocks/footer";
+@import "_blocks/modal-wrapper";
+@import "_blocks/modal";

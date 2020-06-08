@@ -1,0 +1,63 @@
+.form {
+	padding: 40px 35px;
+	position: relative;
+	width: 360px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -58px;
+		left: -80px;
+		width: 503px;
+		height: 560px;
+		background-image: url('../img/form-bg.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	&__content {
+		position: relative;
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 24px;
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 20px;
+
+		span {
+			font-weight: normal;
+		}
+	}
+
+	&__row {
+		margin-top: 18px;
+	}
+
+	&__button {
+		margin-top: 18px;
+		width: 100%;
+	}
+
+	&__checkbox-wrap {
+		margin-top: 34px;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.form {
+		width: auto;
+		padding: 10px;
+		border: 5px solid #e31d1e;
+		background-color: #fff;
+
+		&::before {
+			display: none;
+		}
+	}
+}

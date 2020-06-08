@@ -1,0 +1,178 @@
+.header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	border-bottom: 1px solid #cccccc;
+
+	&__top {
+		display: flex;
+		align-items: center;
+		padding-top: 10px;
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		width: 201px;
+	}
+
+	&__title {
+		margin-left: 24px;
+		margin-right: auto;
+		font-size: 12px;
+		line-height: 16px;
+		max-width: 200px;
+	}
+
+	&__address-and-time {
+		margin-left: 35px;
+		margin-right: auto;
+		font-size: 14px;
+	}
+
+	&__tel-wrap {
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+	}
+
+	&__tel-icon {
+		@include flex-center;
+		@include circle(42px);
+		flex-shrink: 0;
+		border: 3px solid #de1f26;
+		color: #de1f26;
+		font-size: 14px;
+	}
+
+	&__tel-content {
+		margin-left: 15px;
+	}
+
+	&__tel-link {
+		font-weight: 500;
+		@include hover-opacity;
+	}
+
+	&__tel-messengers {
+		font-size: 12px;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 5px;
+
+		li {
+
+			&::before {
+				content: '|';
+				margin-left: 11px;
+				margin-right: 11px;
+			}
+
+			&:first-child {
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__toggle {
+		display: none;
+	}
+
+	&__nav {
+		margin-top: 22px;
+		font-size: 15px;
+		font-weight: 500;
+		padding-bottom: 15px;
+
+		.menu {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.menu-item {
+
+			a {
+				@include hover-opacity;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.header {
+		position: static;
+		background-color: #fff;
+
+		&__top {
+			padding-bottom: 10px;
+		}
+
+		&__logo {
+			margin-right: auto;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__address-and-time {
+			display: none;
+		}
+
+		&__tel-content {
+			display: none;
+		}
+
+		&__nav {
+			display: none;
+			margin-top: 10px;
+			font-size: 18px;
+
+			.menu {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.menu-item {
+				margin-top: 10px;
+			}
+		}
+
+		&__toggle {
+			margin-left: 50px;
+			@include flex-center;
+			flex-direction: column;
+			cursor: pointer;
+
+			span {
+				width: 30px;
+				height: 4px;
+				border-radius: 2px;
+				margin-top: 4px;
+				background-color: #1D1B1C;
+
+				&:nth-child(1) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.header {
+
+		&__logo {
+			width: 150px;
+		}
+
+		&__toggle {
+			margin-left: 30px;
+		}
+	}
+}

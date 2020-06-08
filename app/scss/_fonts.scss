@@ -1,0 +1,11 @@
+@import "_mixins/font-face";
+
+@include font-face('Gotham Pro', '../font/GothamPro');
+@include font-face('Gotham Pro', '../font/GothamPro-Medium', 500);
+@include font-face('Gotham Pro', '../font/GothamPro-Bold', 700);
+@include font-face('Gotham Pro', '../font/GothamPro-Black', 900);
+
+@font-face {
+		font-family: 'Bebas Neue Bold';
+		src: url('../font/bebasneuebold.woff') format('woff'), url('../font/bebasneuebold.woff2') format('woff2'), url('../font/bebasneuebold.ttf') format('truetype');
+}

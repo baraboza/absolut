@@ -1,0 +1,24 @@
+.modal {
+	max-width: 360px;
+	position: relative;
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		font-size: 20px;
+		z-index: 1;
+		cursor: pointer;
+		@include hover-opacity;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.modal {
+
+		&__close {
+			top: 15px;
+			right: 15px;
+		}
+	}
+}

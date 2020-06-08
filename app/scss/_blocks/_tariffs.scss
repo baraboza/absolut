@@ -1,0 +1,153 @@
+.tariffs {
+	margin-top: 45px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -135px;
+		bottom: -200px;
+		background-image: url('../img/ellipse-bg.png');
+		background-size: 100% 100%;
+		background-position: center;
+	}
+
+	&__slider {
+		margin-top: 25px;
+	}
+
+	&__item-box {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #cccccc;
+		border-radius: 8px;
+		overflow: hidden;
+		background-color: #fff;
+
+		&:hover {
+
+			img {
+				transform: scale(1.05);
+			}
+		}
+
+		&--standard {
+
+			.tariffs {
+				&__item-title {
+					// background-color: rgba(71, 174, 227, 0.5);
+					background-color: rgba(41, 144, 197, 0.4);
+				}
+
+				&__item-footer {
+					background-color: rgb(71, 174, 227);
+				}
+			}
+		}
+
+		&--capital {
+
+			.tariffs {
+				&__item-title {
+					// background-color: rgba(76, 166, 70, 0.5);
+					background-color: rgba(46, 136, 40, 0.4);
+				}
+
+				&__item-footer {
+					background-color: rgb(76, 166, 70);
+				}
+			}
+		}
+
+		&--elite {
+
+			.tariffs {
+				&__item-title {
+					// background-color: rgba(236, 32, 32, 0.5);
+					background-color: rgba(206, 2, 2, 0.4);
+				}
+
+				&__item-footer {
+					background-color: rgb(236, 32, 32);
+				}
+			}
+		}
+	}
+
+	&__img-box {
+		height: 216px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.3s;
+		}
+	}
+
+	&__item-title {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 15px;
+		text-align: center;
+		color: #fff;
+		font-weight: 500;
+		font-size: 20px;
+
+		b {
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+
+	&__item-text {
+		margin-bottom: auto;
+		padding: 18px 18px 10px;
+	}
+
+	&__desc {
+		font-size: 14px;
+		font-weight: 500;
+		padding-left: 12px;
+	}
+
+	&__article {
+		margin-top: 14px;
+	}
+
+	&__item-footer {
+		padding: 16px 16px 30px;
+	}
+
+	&__price {
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+
+		b {
+			font-size: 24px;
+		}
+	}
+
+	&__button {
+		margin: 18px auto 0;
+		max-width: 220px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tariffs {
+		margin-top: 30px;
+
+		&__title {
+			text-align: center;
+		}
+	}
+}

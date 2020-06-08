@@ -1,0 +1,175 @@
+.request {
+	background-image: url('../img/request-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 55px;
+	padding-bottom: 124px;
+
+	&__content {
+		padding-left: 150px;
+		padding-right: 45px;
+	}
+
+	&__gift-list {
+		padding-top: 50px;
+	}
+
+	&__gift-item {
+
+		&:nth-child(n + 4) {
+			margin-top: 48px;
+		}
+	}
+
+	&__gift-item-box {
+		height: 120px;
+		position: relative;
+		border-radius: 8px;
+		box-shadow: 0 10px 15px rgba(#2a0d00, 0.2);
+		display: flex;
+		align-items: flex-end;
+		padding: 10px;
+		transition: 0.3s;
+
+		&:hover {
+			transform: translate(0, -5px);
+			box-shadow: 0 15px 30px rgba(#2a0d00, 0.2);
+		}
+
+		img {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		&--design {
+			background-color: #d8e7ff;
+
+			img {
+				top: -21px;
+			}
+		}
+
+		&--ceiling {
+
+			img {
+				top: 0;
+				@include cover;
+				border-radius: 8px;
+			}
+		}
+
+		&--hisense {
+			background-color: #f5e5d8;
+
+			img {
+				top: -17px;
+			}
+		}
+
+		&--rehau {
+			background-color: #d5c8d3;
+
+			img {
+				top: -25px;
+			}
+		}
+
+		&--bosch {
+			background-color: #e2e6e9;
+
+			img {
+				top: -20px;
+			}
+		}
+	}
+	
+	&__gift-title {
+		position: relative;
+		font-size: 14px;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		min-height: 32px;
+
+		&::before {
+			content: '';
+			background-image: url('../img/gift.svg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			flex-shrink: 0;
+			width: 15px;
+			height: 19px;
+			margin-right: 12px;
+			margin-top: 2px;
+		}
+	}
+
+	&__col-form {
+		padding-top: 60px;
+		flex-grow: 0;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.request {
+
+		&__content {
+			padding-left: 0;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.request {
+		padding-bottom: 80px;
+
+		&__content {
+			padding-right: 0;
+		}
+
+		.form {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.request {
+		padding-top: 30px;
+
+		&__title {
+			text-align: center;
+		}
+
+		&__gift-list {
+			padding-top: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.request {
+		padding-bottom: 30px;
+
+		&__gift-item {
+
+			&:nth-child(n + 3) {
+				margin-top: 40px;
+			}
+		}
+
+		&__gift-title {
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__col-form {
+			padding-top: 10px;
+		}
+	}
+}

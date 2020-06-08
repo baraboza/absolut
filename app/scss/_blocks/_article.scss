@@ -1,0 +1,88 @@
+.article {
+	font-size: 14px;
+	line-height: 21px;
+
+	img {
+
+	}
+
+	p {
+		
+		&:nth-child(n + 2) {
+			margin-top: 20px;
+		}
+	}
+
+	ul {
+
+		> li {
+			padding-left: 12px;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 7px;
+				left: 0;
+				@include circle(6px);
+				background-color: #ec2020;
+			}
+		}
+	}
+
+	ol {
+
+		> li {
+
+		}
+	}
+
+	blockquote {
+
+	}
+
+	h2, h3, h4, h5, h6 {
+		font-weight: 700;
+	}
+
+	h2 {
+		margin-bottom: 21px;
+		font-size: 32px;
+		line-height: 42px;
+		font-weight: 500;
+	}
+
+	h3 {
+
+	}
+
+	h4 {
+
+	}
+
+	h5 {
+
+	}
+
+	h6 {
+
+	}
+
+	strong, b {
+		font-weight: 700;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.article {
+
+		h2 {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+}
