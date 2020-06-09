@@ -135,6 +135,7 @@ $('.faq__question').click(function() {
 
 $('.header__toggle').click(function() {
 	$('.header__nav').slideToggle();
+	$(this).toggleClass('active');
 });
 
 });

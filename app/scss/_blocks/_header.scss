@@ -144,20 +144,53 @@
 		}
 
 		&__toggle {
+			display: block;
+			position: relative;
 			margin-left: 50px;
-			@include flex-center;
+			width: 30px;
+			height: 20px;
 			flex-direction: column;
 			cursor: pointer;
 
 			span {
-				width: 30px;
+				position: absolute;
+				left: 0;
+				right: 0;
 				height: 4px;
 				border-radius: 2px;
-				margin-top: 4px;
 				background-color: #1D1B1C;
+				transition: 0.2s;
 
 				&:nth-child(1) {
-					margin-top: 0;
+					top: 0;
+				}
+
+				&:nth-child(2) {
+					top: 8px;
+				}
+
+				&:nth-child(3) {
+					bottom: 0;
+				}
+			}
+
+			&.active {
+
+				span {
+
+					&:nth-child(1) {
+						transform: rotate(45deg);
+						top: 8px;
+					}
+
+					&:nth-child(2) {
+						opacity: 0;
+					}
+
+					&:nth-child(3) {
+						transform: rotate(-45deg);
+						bottom: 8px;
+					}
 				}
 			}
 		}

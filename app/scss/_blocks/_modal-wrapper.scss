@@ -9,6 +9,10 @@
 	background: rgba(0,0,0,0.7);
 	z-index: 11;
 
+	&--request-call {
+		z-index: 12;
+	}
+
 	&__container {
 		display: flex;
 		justify-content: center;

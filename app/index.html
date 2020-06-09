@@ -28,7 +28,7 @@
 					пн-сб 9:00 - 20:00
 				</p>
 				<div class="header__tel-wrap">
-					<a href="tel:+79788261658" rel="nofollow" class="header__tel-icon"><i class="fas fa-phone-alt"></i></a>
+					<a href="#modal" class="header__tel-icon js-modal-open"><i class="fas fa-phone-alt"></i></a>
 					<div class="header__tel-content">
 						<a href="tel:+79788261658" rel="nofollow" class="header__tel-link">+7 (978) 826-16-58</a>
 						<ul class="header__tel-messengers">
@@ -140,52 +140,52 @@
 						</div>
 					</li>
 					<li class="services__grid-item">
-						<div class="services__item-box services__item-box--plumbing-work">
+						<a href="#modal-service-3" class="services__item-box services__item-box--plumbing-work js-modal-open">
 							<img src="img/services-item-3.jpg" alt="">
 							<div class="services__item-content">
 								<p class="services__item-title">Сантехнические<br> работы</p>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li class="services__grid-item">
-						<div class="services__item-box">
+						<a href="#modal-service-4" class="services__item-box js-modal-open">
 							<img src="img/services-item-4.jpg" alt="">
 							<div class="services__item-content">
 								<p class="services__item-title">Услуги<br> электрика</p>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li class="services__grid-item">
-						<div class="services__item-box">
+						<a href="#modal-service-5" class="services__item-box js-modal-open">
 							<img src="img/services-item-5.jpg" alt="">
 							<div class="services__item-content">
 								<p class="services__item-title">КУХНИ<br> ПОД ЗАКАЗ</p>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li class="services__grid-item">
-						<div class="services__item-box services__item-box--stretch-ceiling">
+						<a href="#modal-service-6" class="services__item-box services__item-box--stretch-ceiling js-modal-open">
 							<img src="img/services-item-6.jpg" alt="">
 							<div class="services__item-content">
 								<p class="services__item-title">НАТЯЖНЫЕ<br> ПОТОЛКИ</p>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li class="services__grid-item">
-						<div class="services__item-box">
+						<a href="#modal-service-7" class="services__item-box js-modal-open">
 							<img src="img/services-item-7.jpg" alt="">
 							<div class="services__item-content">
 								<p class="services__item-title">ПРОИЗВОДСТВО<br> И УСТАНОВКА<br> ОКОН</p>
 							</div>
-						</div>
+						</a>
 					</li>
 					<li class="services__grid-item">
-						<div class="services__item-box">
+						<a href="#modal-service-8" class="services__item-box js-modal-open">
 							<img src="img/services-item-8.jpg" alt="">
 							<div class="services__item-content">
 								<p class="services__item-title">ПРОДАЖА И УСТАНОВКА<br> КОНДИЦИОНЕРОВ</p>
 							</div>
-						</div>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -345,7 +345,7 @@
 								</div>
 								<div class="tariffs__item-footer">
 									<p class="tariffs__price">от <b>3000-6000 Р</b> кв/м</p>
-									<a href="#modal" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
+									<a href="#modal-tariffs-standard" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
 								</div>
 							</div>
 						</li>
@@ -374,7 +374,7 @@
 								</div>
 								<div class="tariffs__item-footer">
 									<p class="tariffs__price">от <b>6000-9000 Р</b> кв/м</p>
-									<a href="#modal" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
+									<a href="#modal-tariffs-capital" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
 								</div>
 							</div>
 						</li>
@@ -406,7 +406,7 @@
 								</div>
 								<div class="tariffs__item-footer">
 									<p class="tariffs__price">от <b>9000 Р</b> кв/м</p>
-									<a href="#modal" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
+									<a href="#modal-tariffs-elite" class="tariffs__button button button--yellow js-modal-open">Заказать ремонт</a>
 								</div>
 							</div>
 						</li>
@@ -701,7 +701,7 @@
 
 	<div class="scroll-top"><span><i class="fas fa-arrow-up"></i></span></div>
 
-	<div id="modal" class="modal-wrapper">
+	<div id="modal" class="modal-wrapper modal-wrapper--request-call">
 		<div class="modal-wrapper__container">
 			<form class="modal form">
 				<div class="modal__close"><i class="fas fa-times"></i></div>
@@ -722,6 +722,204 @@
 					</div>
 				</div>
 			</form>
+		</div>
+	</div>
+
+	<div id="modal-tariffs-standard" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<form class="modal form">
+				<div class="modal__close"><i class="fas fa-times"></i></div>
+				<div class="form__content">
+					<p class="form__title">Заказать ремонт квартиры</p>
+					<p class="form__subtitle txt">
+						Стандартный
+					</p>
+					<div class="form__row">
+						<input type="text" class="input" placeholder="Ваше имя">
+					</div>
+					<div class="form__row">
+						<input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+					</div>
+					<input type="submit" class="form__button button" value="Заказать ремонт">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-tariffs-capital" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<form class="modal form">
+				<div class="modal__close"><i class="fas fa-times"></i></div>
+				<div class="form__content">
+					<p class="form__title">Заказать ремонт квартиры</p>
+					<p class="form__subtitle txt">
+						Капитальный
+					</p>
+					<div class="form__row">
+						<input type="text" class="input" placeholder="Ваше имя">
+					</div>
+					<div class="form__row">
+						<input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+					</div>
+					<input type="submit" class="form__button button" value="Заказать ремонт">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-tariffs-elite" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<form class="modal form">
+				<div class="modal__close"><i class="fas fa-times"></i></div>
+				<div class="form__content">
+					<p class="form__title">Заказать ремонт квартиры</p>
+					<p class="form__subtitle txt">
+						Элитный
+					</p>
+					<div class="form__row">
+						<input type="text" class="input" placeholder="Ваше имя">
+					</div>
+					<div class="form__row">
+						<input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+					</div>
+					<input type="submit" class="form__button button" value="Заказать ремонт">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-service-3" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal-service modal">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<p class="modal-service__title h2">Заголовок</p>
+				<div class="modal-service__row row">
+					<div class="modal-service__text-box col-sm-6">
+						<div class="modal-service__article article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus, harum qui quibusdam quam sit suscipit quidem assumenda ab totam. Voluptas repellat, accusantium deleniti veniam nam ad dolorum reprehenderit laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt, aliquid nemo architecto vel, fuga, velit nulla expedita reprehenderit illo suscipit fugit, asperiores cumque voluptatibus temporibus qui. Eveniet, aperiam, debitis.</p>
+						</div>
+						<a href="#modal" class="modal-service__button button button--yellow js-modal-open">Заказать</a>
+					</div>
+					<div class="modal-service__img-box col-sm-6">
+						<img src="img/project-image.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-service-4" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal-service modal">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<p class="modal-service__title h2">Заголовок</p>
+				<div class="modal-service__row row">
+					<div class="modal-service__text-box col-sm-6">
+						<div class="modal-service__article article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus, harum qui quibusdam quam sit suscipit quidem assumenda ab totam. Voluptas repellat, accusantium deleniti veniam nam ad dolorum reprehenderit laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt, aliquid nemo architecto vel, fuga, velit nulla expedita reprehenderit illo suscipit fugit, asperiores cumque voluptatibus temporibus qui. Eveniet, aperiam, debitis.</p>
+						</div>
+						<a href="#modal" class="modal-service__button button button--yellow js-modal-open">Заказать</a>
+					</div>
+					<div class="modal-service__img-box col-sm-6">
+						<img src="img/project-image.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-service-5" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal-service modal">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<p class="modal-service__title h2">Заголовок</p>
+				<div class="modal-service__row row">
+					<div class="modal-service__text-box col-sm-6">
+						<div class="modal-service__article article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus, harum qui quibusdam quam sit suscipit quidem assumenda ab totam. Voluptas repellat, accusantium deleniti veniam nam ad dolorum reprehenderit laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt, aliquid nemo architecto vel, fuga, velit nulla expedita reprehenderit illo suscipit fugit, asperiores cumque voluptatibus temporibus qui. Eveniet, aperiam, debitis.</p>
+						</div>
+						<a href="#modal" class="modal-service__button button button--yellow js-modal-open">Заказать</a>
+					</div>
+					<div class="modal-service__img-box col-sm-6">
+						<img src="img/project-image.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-service-6" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal-service modal">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<p class="modal-service__title h2">Заголовок</p>
+				<div class="modal-service__row row">
+					<div class="modal-service__text-box col-sm-6">
+						<div class="modal-service__article article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus, harum qui quibusdam quam sit suscipit quidem assumenda ab totam. Voluptas repellat, accusantium deleniti veniam nam ad dolorum reprehenderit laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt, aliquid nemo architecto vel, fuga, velit nulla expedita reprehenderit illo suscipit fugit, asperiores cumque voluptatibus temporibus qui. Eveniet, aperiam, debitis.</p>
+						</div>
+						<a href="#modal" class="modal-service__button button button--yellow js-modal-open">Заказать</a>
+					</div>
+					<div class="modal-service__img-box col-sm-6">
+						<img src="img/project-image.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-service-7" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal-service modal">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<p class="modal-service__title h2">Заголовок</p>
+				<div class="modal-service__row row">
+					<div class="modal-service__text-box col-sm-6">
+						<div class="modal-service__article article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus, harum qui quibusdam quam sit suscipit quidem assumenda ab totam. Voluptas repellat, accusantium deleniti veniam nam ad dolorum reprehenderit laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt, aliquid nemo architecto vel, fuga, velit nulla expedita reprehenderit illo suscipit fugit, asperiores cumque voluptatibus temporibus qui. Eveniet, aperiam, debitis.</p>
+						</div>
+						<a href="#modal" class="modal-service__button button button--yellow js-modal-open">Заказать</a>
+					</div>
+					<div class="modal-service__img-box col-sm-6">
+						<img src="img/project-image.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-service-8" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal-service modal">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<p class="modal-service__title h2">Заголовок</p>
+				<div class="modal-service__row row">
+					<div class="modal-service__text-box col-sm-6">
+						<div class="modal-service__article article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus, harum qui quibusdam quam sit suscipit quidem assumenda ab totam. Voluptas repellat, accusantium deleniti veniam nam ad dolorum reprehenderit laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt, aliquid nemo architecto vel, fuga, velit nulla expedita reprehenderit illo suscipit fugit, asperiores cumque voluptatibus temporibus qui. Eveniet, aperiam, debitis.</p>
+						</div>
+						<a href="#modal" class="modal-service__button button button--yellow js-modal-open">Заказать</a>
+					</div>
+					<div class="modal-service__img-box col-sm-6">
+						<img src="img/project-image.jpg" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

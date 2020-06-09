@@ -1,0 +1,43 @@
+.modal-service {
+	background-color: #fff;
+	max-width: 1200px;
+	padding: 20px;
+	border-radius: 8px;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__row {
+		margin-top: 20px;
+	}
+
+	&__article {
+
+		h2 {
+			text-align: center;
+		}
+	}
+
+	&__button {
+		max-width: 200px;
+		margin: 30px auto 0;
+	}
+
+	&__img-box {
+
+		img {
+			width: 100%;
+			border-radius: 8px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.modal-service {
+
+		&__img-box {
+			margin-top: 40px;
+		}
+	}
+}
